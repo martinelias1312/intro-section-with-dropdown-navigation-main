@@ -106,12 +106,16 @@ header {
 
 .btn-nav-open {
   background: url(/assets/images/icon-menu.svg) no-repeat;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .btn-nav-close {
   background: url(/assets/images/icon-close-menu.svg) no-repeat;
   height: 2em;
   z-index: 1;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 nav {

@@ -38,12 +38,14 @@ header {
 
 .btn-nav-open {
   background: url(/assets/images/icon-menu.svg) no-repeat;
+  transition: 0.3s all ease-in-out;
 }
 
 .btn-nav-close {
   background: url(/assets/images/icon-close-menu.svg) no-repeat;
   height: 2em;
   z-index: 1;
+  transform: rotate(360deg);
 }
 
 nav {
