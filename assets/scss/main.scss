@@ -5,3 +5,27 @@
 /*
  *	CONTENT
  ------------------------------------------------------ */
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+nav,
+.log-reg {
+  display: none;
+}
+
+.btn-nav {
+  background: url(/assets/images/icon-menu.svg) no-repeat;
+  background-size: contain;
+  border: none;
+  width: 3em;
+  padding: 0;
+}
+
+.logo-snap {
+  max-width: 6em;
+}
