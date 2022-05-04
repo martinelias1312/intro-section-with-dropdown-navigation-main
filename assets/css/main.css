@@ -124,7 +124,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1em;
+  line-height: 2.5em;
   position: absolute;
   right: 0;
   padding-top: 3em;
@@ -142,6 +142,14 @@ details {
           flex-direction: column;
 }
 
+details a {
+  padding-left: 1.5em;
+}
+
+details a:hover, details a:focus {
+  color: #141414;
+}
+
 summary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,6 +163,11 @@ summary {
           align-items: center;
   gap: 0.8em;
   list-style: none;
+}
+
+.arrow {
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 .register {
