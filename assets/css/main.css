@@ -60,6 +60,7 @@ img {
 
 a {
   text-decoration: none;
+  color: dimgray;
 }
 
 .hidden {
@@ -89,24 +90,6 @@ header {
   max-width: 6em;
 }
 
-nav {
-  min-height: 100vh;
-  width: 65%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1em;
-  position: absolute;
-  right: 0;
-  padding-top: 3em;
-  padding-left: 1.5em;
-  background: #fafafa;
-}
-
 .btn-nav-open,
 .btn-nav-close {
   background-size: contain;
@@ -129,6 +112,78 @@ nav {
   background: url(/assets/images/icon-close-menu.svg) no-repeat;
   height: 2em;
   z-index: 1;
+}
+
+nav {
+  min-height: 100vh;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  position: absolute;
+  right: 0;
+  padding-top: 3em;
+  padding-left: 1.5em;
+  background: #fafafa;
+}
+
+details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8em;
+  list-style: none;
+}
+
+.register {
+  border: 1px solid dimgray;
+  border-radius: 15px;
+  padding: 1em 1.5em;
+}
+
+summary:focus, summary:hover,
+.about:focus,
+.about:hover,
+.careers:focus,
+.careers:hover,
+.login:focus,
+.login:hover,
+.register:focus,
+.register:hover {
+  cursor: pointer;
+  color: #141414;
+}
+
+summary:focus path,
+summary:hover path {
+  stroke: #141414;
+}
+
+.register:hover,
+.register:focus {
+  border: #141414;
 }
 
 /* Main*/

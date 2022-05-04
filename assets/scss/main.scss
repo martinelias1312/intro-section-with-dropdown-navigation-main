@@ -23,19 +23,6 @@ header {
   max-width: 6em;
 }
 
-nav {
-  min-height: 100vh;
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  position: absolute;
-  right: 0;
-  padding-top: 3em;
-  padding-left: 1.5em;
-  background: $color-Almost-White;
-}
-
 .btn-nav-open,
 .btn-nav-close {
   background-size: contain;
@@ -57,6 +44,62 @@ nav {
   background: url(/assets/images/icon-close-menu.svg) no-repeat;
   height: 2em;
   z-index: 1;
+}
+
+nav {
+  min-height: 100vh;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: absolute;
+  right: 0;
+  padding-top: 3em;
+  padding-left: 1.5em;
+  background: $color-Almost-White;
+}
+
+details {
+  display: flex;
+  flex-direction: column;
+}
+
+summary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8em;
+  list-style: none;
+}
+
+.register {
+  border: 1px solid $color-Medium-Gray;
+  border-radius: 15px;
+  padding: 1em 1.5em;
+}
+
+summary,
+.about,
+.careers,
+.login,
+.register {
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    color: $color-Almost-Black;
+  }
+}
+
+summary:focus,
+summary:hover {
+  path {
+    stroke: $color-Almost-Black;
+  }
+}
+
+.register:hover,
+.register:focus {
+  border: $color-Almost-Black;
 }
 
 /* Main*/
