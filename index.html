@@ -20,19 +20,6 @@
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/@babel/standalone@7.17.9/babel.min.js"
-    ></script>
-
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -45,63 +32,64 @@
     </style>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <img src="/images/logo.svg" alt="" aria-hidden="true" />
 
-    <script type="text/babel">
-      const container = document.querySelector("#app");
-      const root = ReactDOM.createRoot(container);
+      <nav>
+        <details>
+          <summary>Features</summary>
+          <a href="#">Todo List</a>
+          <a href="#">Calendar</a>
+          <a href="#">Reminders</a>
+          <a href="#">Planning</a>
+        </details>
 
-      function Header() {
-        return (
-          <header>
-            <img src="/images/logo.svg" alt="" aria-hidden="true" />
-            <nav>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </nav>
-          </header>
-        );
-      }
+        <details>
+          <summary>Company</summary>
+          <a href="#">History</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </details>
 
-      function Main() {
-        return (
-          <main>
-            Features Company Careers About Login Register Make remote work Get
-            your team in sync, no matter your location. Streamline processes,
-            create team rituals, and watch productivity soar. Learn more
-          </main>
-        );
-      }
+        <a href="#">Carrers</a>
+        <a href="#">About</a>
+      </nav>
 
-      function Footer() {
-        return (
-          <footer className="attribution">
-            Challenge by
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-            >
-              Frontend Mentor
-            </a>
-            . Coded by <a href="#">Your Name Here</a>.
-          </footer>
-        );
-      }
+      <ul>
+        <li>Login</li>
+        <li>Register</li>
+      </ul>
+    </header>
 
-      function Layout(props) {
-        return (
-          <>
-            <Header />
-            <Main />
-            <Footer />
-          </>
-        );
-      }
+    <main>
+      <img
+        src="/images/image-hero-desktop.png"
+        alt="Person with laptop in his hands"
+      />
+      <img
+        src="/images/image-hero-mobile.png"
+        alt="Person with laptop in his hands"
+      />
+      <h1>Make remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <a href="#">Learn more</a>
+      <ul>
+        <li><img src="/images/client-databiz.svg" alt="" /></li>
+        <li><img src="/images/client-audiophile.svg" alt="" /></li>
+        <li><img src="/images/client-meet.svg" alt="" /></li>
+        <li><img src="/images/client-maker.svg" alt="" /></li>
+      </ul>
+    </main>
 
-      root.render(<Layout />);
-    </script>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by <a href="#">Your Name Here</a>.
+    </footer>
   </body>
 </html>
