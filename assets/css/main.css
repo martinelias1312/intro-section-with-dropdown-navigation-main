@@ -91,6 +91,10 @@ nav,
   padding: 0;
 }
 
+.btn-nav:hover, .btn-nav:focus {
+  cursor: pointer;
+}
+
 .logo-snap {
   max-width: 6em;
 }
@@ -116,6 +120,7 @@ h1 {
 .main-text {
   padding: 0 1em;
   text-align: center;
+  line-height: 1.6em;
 }
 
 .btn-learn {
@@ -129,6 +134,7 @@ h1 {
 
 .btn-learn:hover, .btn-learn:focus {
   color: #141414;
+  font-weight: 700;
   background: #fafafa;
   border: 1px solid #141414;
 }

@@ -26,6 +26,11 @@ nav,
   border: none;
   width: 3em;
   padding: 0;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
 .logo-snap {
@@ -52,6 +57,7 @@ h1 {
 .main-text {
   padding: 0 1em;
   text-align: center;
+  line-height: 1.6em;
 }
 
 .btn-learn {
@@ -65,6 +71,7 @@ h1 {
   &:hover,
   &:focus {
     color: $color-Almost-Black;
+    font-weight: 700;
     background: $color-Almost-White;
     border: 1px solid $color-Almost-Black;
   }
