@@ -17,9 +17,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: $color-Dark-Blue;
-  color: $color-Light-Cyan;
+  min-height: 100vh;
+  background: $color-Almost-White;
+  color: $color-Medium-Gray;
 
   font: {
     size: $Font-size-base;
