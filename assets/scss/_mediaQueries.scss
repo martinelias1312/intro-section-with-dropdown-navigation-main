@@ -1,5 +1,141 @@
-@media screen and (min-with: 599px) {
+@media screen and (min-width: 599px) {
+  header {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .logo-snap {
+    width: 84px;
+    height: 27px;
+  }
+
+  #nav-bar {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 0;
+    line-height: 1.2em;
+    width: fit-content;
+  }
+
+  details a {
+    padding: 0;
+  }
+
   .btn-nav-open {
     display: none;
+  }
+
+  .dropdown1-wrap,
+  .dropdown2-wrap {
+    position: absolute;
+    margin-top: 1em;
+    line-height: 1.5em;
+    background: #fff;
+    padding: 1.3em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.233);
+  }
+
+  .dropdown1-wrap {
+    left: 5.5em;
+  }
+}
+
+@media screen and(min-width: 799px) {
+  .log-reg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    list-style: none;
+    margin: 0;
+  }
+
+  .register,
+  .login {
+    color: $color-Medium-Gray;
+    font-size: 1em;
+    font-family: $Font-family;
+  }
+
+  .register:hover,
+  .register:focus {
+    border: 1px solid $color-Almost-Black;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5%;
+    gap: 2em;
+  }
+
+  .img-desktop {
+    display: block;
+    max-width: 430px;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .main-content {
+    max-width: 430px;
+    * {
+      padding: 0;
+      text-align: left;
+    }
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .main-text {
+    margin: 2em auto;
+  }
+
+  .btn-learn {
+    margin: 3em 0;
+    padding: 1em 1.5em;
+  }
+
+  .clients {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and(min-width: 1439px) {
+  header {
+    max-width: 1440px;
+    padding: 1.5em 5em;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 100%;
+    grid-template-columns: 0.5fr 1fr 2fr 1fr;
+  }
+
+  #nav-bar {
+    align-items: center;
+  }
+
+  main {
+    gap: 10em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .btn-learn {
+    margin-bottom: 6em;
+  }
+
+  .log-reg {
+    grid-column: 4 / 5;
   }
 }

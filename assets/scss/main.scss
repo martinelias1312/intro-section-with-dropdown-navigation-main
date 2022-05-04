@@ -118,6 +118,12 @@ summary {
   border: 1px solid $color-Medium-Gray;
   border-radius: 15px;
   padding: 1em 1.5em;
+  background: $color-Almost-White;
+}
+
+.login {
+  background: none;
+  border: none;
 }
 
 summary,
@@ -145,10 +151,6 @@ summary:hover {
 }
 
 /* Main */
-main {
-  display: grid;
-}
-
 h1,
 .main-text,
 .btn-learn {
@@ -169,6 +171,7 @@ h1 {
 
 .btn-learn {
   display: block;
+  width: fit-content;
   padding: 1em 1.5em;
   color: $color-Almost-White;
   text-decoration: none;
