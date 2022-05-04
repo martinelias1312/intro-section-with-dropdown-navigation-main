@@ -96,6 +96,62 @@ nav,
 }
 
 /* Main*/
+main {
+  display: -ms-grid;
+  display: grid;
+}
+
+h1,
+.main-text,
+.btn-learn {
+  margin: 0.5em auto;
+}
+
+h1 {
+  text-align: center;
+  color: #141414;
+  margin-top: 1.5em;
+}
+
+.main-text {
+  padding: 0 1em;
+  text-align: center;
+}
+
+.btn-learn {
+  display: block;
+  padding: 1em 1.5em;
+  color: #fafafa;
+  text-decoration: none;
+  background: #141414;
+  border-radius: 15px;
+}
+
+.btn-learn:hover, .btn-learn:focus {
+  color: #141414;
+  background: #fafafa;
+  border: 1px solid #141414;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  padding: 0 1em;
+}
+
+.clients li {
+  list-style: none;
+}
+
 /* Footer */
 .attribution {
   font-size: 0.6875em;
