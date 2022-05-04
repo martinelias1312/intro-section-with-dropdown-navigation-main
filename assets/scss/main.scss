@@ -2,6 +2,11 @@
 @import "_variables";
 @import "_general";
 
+// useful classes
+.hidden {
+  display: none;
+}
+
 /*
  *	CONTENT
  ------------------------------------------------------ */
@@ -14,17 +19,29 @@ header {
   padding: 1em;
 }
 
-.hidden {
-  display: none;
+.logo-snap {
+  max-width: 6em;
+}
+
+nav {
+  min-height: 100vh;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: absolute;
+  right: 0;
+  padding-top: 3em;
+  padding-left: 1.5em;
+  background: $color-Almost-White;
 }
 
 .btn-nav-open,
 .btn-nav-close {
-  background: url(/assets/images/icon-menu.svg) no-repeat;
   background-size: contain;
   border: none;
-  width: 3em;
   padding: 0;
+  width: 3em;
 
   &:hover,
   &:focus {
@@ -32,12 +49,14 @@ header {
   }
 }
 
-.btn-nav-close {
-  background: url(/assets/images/icon-close-menu.svg) no-repeat;
+.btn-nav-open {
+  background: url(/assets/images/icon-menu.svg) no-repeat;
 }
 
-.logo-snap {
-  max-width: 6em;
+.btn-nav-close {
+  background: url(/assets/images/icon-close-menu.svg) no-repeat;
+  height: 2em;
+  z-index: 1;
 }
 
 /* Main*/

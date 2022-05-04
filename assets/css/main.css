@@ -58,6 +58,14 @@ img {
   border: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
 /*
  *	CONTENT
  ------------------------------------------------------ */
@@ -77,17 +85,34 @@ header {
   padding: 1em;
 }
 
-.hidden {
-  display: none;
+.logo-snap {
+  max-width: 6em;
+}
+
+nav {
+  min-height: 100vh;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  position: absolute;
+  right: 0;
+  padding-top: 3em;
+  padding-left: 1.5em;
+  background: #fafafa;
 }
 
 .btn-nav-open,
 .btn-nav-close {
-  background: url(/assets/images/icon-menu.svg) no-repeat;
   background-size: contain;
   border: none;
-  width: 3em;
   padding: 0;
+  width: 3em;
 }
 
 .btn-nav-open:hover, .btn-nav-open:focus,
@@ -96,12 +121,14 @@ header {
   cursor: pointer;
 }
 
-.btn-nav-close {
-  background: url(/assets/images/icon-close-menu.svg) no-repeat;
+.btn-nav-open {
+  background: url(/assets/images/icon-menu.svg) no-repeat;
 }
 
-.logo-snap {
-  max-width: 6em;
+.btn-nav-close {
+  background: url(/assets/images/icon-close-menu.svg) no-repeat;
+  height: 2em;
+  z-index: 1;
 }
 
 /* Main*/
