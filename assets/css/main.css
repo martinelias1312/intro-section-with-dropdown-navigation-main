@@ -295,4 +295,10 @@ footer {
 .attribution a {
   color: #3e52a3;
 }
+
+@media screen and (min-with: 599px) {
+  .btn-nav-open {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
