@@ -4,11 +4,13 @@
 const btnNavOpen = document.querySelector(".btn-nav-open");
 const nav = document.querySelector("nav");
 const details = [...document.querySelectorAll("details")];
+const blur = document.querySelector(".blur");
 
 // func
 const handleBtnNavClick = () => {
   nav.classList.toggle("hidden");
   btnNavOpen.classList.toggle("btn-nav-close");
+  blur.classList.toggle("hidden");
 };
 
 const handleDetailsClick = (e) => {
