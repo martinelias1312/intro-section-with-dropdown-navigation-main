@@ -3,6 +3,7 @@
 // selectors
 const btnNavOpen = document.querySelector(".btn-nav-open");
 const nav = document.querySelector("nav");
+const details = [...document.querySelectorAll("details")];
 
 // func
 const handleBtnNavClick = () => {
@@ -10,5 +11,17 @@ const handleBtnNavClick = () => {
   btnNavOpen.classList.toggle("btn-nav-close");
 };
 
+const handleDetailsClick = (e) => {
+  let clickedItem = e.target.closest("details");
+  let arrow = clickedItem.querySelector(".arrow");
+
+  if (clickedItem.open == false) {
+    arrow.style.transform = `rotate(180deg)`;
+  } else {
+    arrow.style.transform = `rotate(0deg)`;
+  }
+};
+
 // listeners
 btnNavOpen.addEventListener("click", handleBtnNavClick);
+details.forEach((item) => item.addEventListener("click", handleDetailsClick));
