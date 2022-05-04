@@ -92,6 +92,16 @@ details {
   }
 }
 
+.dropdown1-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown2-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 summary {
   display: flex;
   flex-direction: row;
