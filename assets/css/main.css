@@ -83,7 +83,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1em;
+  padding: 1.5em 1em;
 }
 
 .logo-snap {
@@ -111,6 +111,8 @@ header {
 }
 
 .btn-nav-close {
+  position: fixed;
+  right: 1em;
   background: url(/assets/images/icon-close-menu.svg) no-repeat;
   height: 2em;
   z-index: 1;
@@ -119,7 +121,7 @@ header {
 }
 
 nav {
-  min-height: 100vh;
+  height: 100%;
   width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,11 +131,23 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   line-height: 2.5em;
-  position: absolute;
+  position: fixed;
   right: 0;
-  padding-top: 3em;
+  top: 0;
+  padding-top: 4em;
   padding-left: 1.5em;
   background: #fafafa;
+}
+
+.blur {
+  background: black;
+  position: fixed;
+  height: 100%;
+  width: 35%;
+  left: 0;
+  top: 0;
+  -webkit-filter: opacity(60%);
+          filter: opacity(60%);
 }
 
 details {
@@ -207,7 +221,7 @@ summary:hover path {
   border: #141414;
 }
 
-/* Main*/
+/* Main */
 main {
   display: -ms-grid;
   display: grid;
@@ -261,7 +275,7 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1em;
-  padding: 0 1em;
+  padding: 2em 1em;
 }
 
 .clients li {
@@ -269,6 +283,10 @@ h1 {
 }
 
 /* Footer */
+footer {
+  margin: 2em 0;
+}
+
 .attribution {
   font-size: 0.6875em;
   text-align: center;
