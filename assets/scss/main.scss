@@ -5,6 +5,7 @@
 /*
  *	CONTENT
  ------------------------------------------------------ */
+/* Header */
 header {
   width: 100%;
   display: flex;
@@ -14,7 +15,8 @@ header {
 }
 
 nav,
-.log-reg {
+.log-reg,
+.img-desktop {
   display: none;
 }
 
@@ -28,4 +30,15 @@ nav,
 
 .logo-snap {
   max-width: 6em;
+}
+
+/* Main*/
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
