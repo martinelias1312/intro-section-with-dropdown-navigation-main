@@ -154,6 +154,10 @@ details a:hover, details a:focus {
   color: #141414;
 }
 
+details a svg {
+  margin-right: 0.5em;
+}
+
 summary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,6 +238,8 @@ h1 {
   text-decoration: none;
   background: #141414;
   border-radius: 15px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .btn-learn:hover, .btn-learn:focus {

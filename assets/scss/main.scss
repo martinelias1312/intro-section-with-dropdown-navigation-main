@@ -72,6 +72,10 @@ details {
     &:focus {
       color: $color-Almost-Black;
     }
+
+    svg {
+      margin-right: 0.5em;
+    }
   }
 }
 
@@ -147,6 +151,7 @@ h1 {
   text-decoration: none;
   background: $color-Almost-Black;
   border-radius: 15px;
+  transition: 0.3s all ease-in-out;
 
   &:hover,
   &:focus {
