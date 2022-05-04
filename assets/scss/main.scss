@@ -14,13 +14,12 @@ header {
   padding: 1em;
 }
 
-nav,
-.log-reg,
-.img-desktop {
+.hidden {
   display: none;
 }
 
-.btn-nav {
+.btn-nav-open,
+.btn-nav-close {
   background: url(/assets/images/icon-menu.svg) no-repeat;
   background-size: contain;
   border: none;
@@ -31,6 +30,10 @@ nav,
   &:focus {
     cursor: pointer;
   }
+}
+
+.btn-nav-close {
+  background: url(/assets/images/icon-close-menu.svg) no-repeat;
 }
 
 .logo-snap {

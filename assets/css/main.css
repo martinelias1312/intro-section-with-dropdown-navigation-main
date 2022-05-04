@@ -77,13 +77,12 @@ header {
   padding: 1em;
 }
 
-nav,
-.log-reg,
-.img-desktop {
+.hidden {
   display: none;
 }
 
-.btn-nav {
+.btn-nav-open,
+.btn-nav-close {
   background: url(/assets/images/icon-menu.svg) no-repeat;
   background-size: contain;
   border: none;
@@ -91,8 +90,14 @@ nav,
   padding: 0;
 }
 
-.btn-nav:hover, .btn-nav:focus {
+.btn-nav-open:hover, .btn-nav-open:focus,
+.btn-nav-close:hover,
+.btn-nav-close:focus {
   cursor: pointer;
+}
+
+.btn-nav-close {
+  background: url(/assets/images/icon-close-menu.svg) no-repeat;
 }
 
 .logo-snap {
