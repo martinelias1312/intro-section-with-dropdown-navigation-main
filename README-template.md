@@ -25,14 +25,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](./screenshot.jpg)
-![](./screenshot.jpg)
+![375px](assets/images/screens/375px.png)
+![375px with menu open](assets/images/screens/375px-menu-open.png)
+![1440px](assets/images/screens/1440px.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/intro-section-with-dropdown-nav-SyNwWfbU5](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-nav-SyNwWfbU5)
+- Live Site URL: [https://intro-section-with-dropdown-navigation-main-lovat.vercel.app/](https://intro-section-with-dropdown-navigation-main-lovat.vercel.app/)
 
 ## My process
 
@@ -53,4 +53,4 @@ Users should be able to:
 ## Author
 
 - LinkedIn - [Martin Eliáš](https://www.linkedin.com/in/martin-eli%C3%A1%C5%A1-455550209/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@martinelias1312](https://www.frontendmentor.io/profile/martinelias1312)
