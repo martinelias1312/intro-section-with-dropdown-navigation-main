@@ -10,7 +10,7 @@ const blur = document.querySelector(".blur");
 const handleBtnNavClick = () => {
   nav.classList.toggle("nav-active");
   btnNavOpen.classList.toggle("btn-nav-close");
-  blur.classList.toggle("hidden");
+  blur.classList.toggle("nav-active");
 };
 
 const handleDetailsClick = (e) => {

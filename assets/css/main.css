@@ -156,15 +156,6 @@ nav {
   transition: transform 350ms ease-in, -webkit-transform 350ms ease-in;
 }
 
-.nav-active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: -webkit-transform 350ms ease-out;
-  transition: -webkit-transform 350ms ease-out;
-  transition: transform 350ms ease-out;
-  transition: transform 350ms ease-out, -webkit-transform 350ms ease-out;
-}
-
 .blur {
   background: black;
   position: fixed;
@@ -174,6 +165,21 @@ nav {
   top: 0;
   -webkit-filter: opacity(60%);
           filter: opacity(60%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 350ms ease-in;
+  transition: -webkit-transform 350ms ease-in;
+  transition: transform 350ms ease-in;
+  transition: transform 350ms ease-in, -webkit-transform 350ms ease-in;
+}
+
+.nav-active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 350ms ease-out;
+  transition: -webkit-transform 350ms ease-out;
+  transition: transform 350ms ease-out;
+  transition: transform 350ms ease-out, -webkit-transform 350ms ease-out;
 }
 
 details {

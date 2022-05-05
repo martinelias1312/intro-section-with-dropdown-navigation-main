@@ -72,11 +72,6 @@ nav {
   transition: transform 350ms ease-in;
 }
 
-.nav-active {
-  transform: translateX(0);
-  transition: transform 350ms ease-out;
-}
-
 .blur {
   background: rgb(0, 0, 0);
   position: fixed;
@@ -85,6 +80,13 @@ nav {
   left: 0;
   top: 0;
   filter: opacity(60%);
+  transform: translateX(-100%);
+  transition: transform 350ms ease-in;
+}
+
+.nav-active {
+  transform: translateX(0);
+  transition: transform 350ms ease-out;
 }
 
 details {
