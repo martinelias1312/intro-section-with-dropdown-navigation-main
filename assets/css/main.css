@@ -400,6 +400,8 @@ footer {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   details a {
     padding: 0;
@@ -419,7 +421,7 @@ footer {
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.233);
   }
   .dropdown1-wrap {
-    left: 5em;
+    left: -3em;
   }
 }
 
@@ -515,9 +517,6 @@ footer {
   }
   header {
     width: 90%;
-  }
-  .dropdown1-wrap {
-    left: 9em;
   }
 }
 /*# sourceMappingURL=main.css.map */

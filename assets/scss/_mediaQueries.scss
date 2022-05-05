@@ -19,6 +19,7 @@
     padding: 0;
     line-height: 1.2em;
     width: fit-content;
+    transform: translateX(0);
   }
 
   details a {
@@ -41,7 +42,7 @@
   }
 
   .dropdown1-wrap {
-    left: 5em;
+    left: -3em;
   }
 }
 
@@ -125,9 +126,5 @@
 
   header {
     width: 90%;
-  }
-
-  .dropdown1-wrap {
-    left: 9em;
   }
 }
